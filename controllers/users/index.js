@@ -3,6 +3,8 @@ const loginUser = require('./loginUser');
 const logoutUser = require('./logoutUser');
 const getCurrentUser = require('./getCurrentUser');
 const updateAvatar = require('./updateAvatar');
+const verifyUser = require('./verifyUser');
+const returnVerifyUser = require('./returnVerifyUser');
 const ctrlWrapper = require('../../helpers/ctrlWrapper');
 
 module.exports = {
@@ -11,4 +13,6 @@ module.exports = {
   getCurrentUser: ctrlWrapper(getCurrentUser),
   logoutUser: ctrlWrapper(logoutUser),
   updateAvatar: ctrlWrapper(updateAvatar),
+  verifyUser: ctrlWrapper(verifyUser),
+  returnVerifyUser: ctrlWrapper(returnVerifyUser),
 };
